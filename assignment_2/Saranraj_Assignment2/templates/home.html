@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script> 
+         
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark ">
+            <div class="container-fluid">
+             <span class="navbar-brand mb-0 h1">><span style="color:rgb(11, 10, 10);">Navbar</span></a></span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="{{ url_for('home') }}"><span style="color:rgb(8, 7, 7);">Home</span></a></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('signin') }}"><span style="color:rgb(17, 15, 15);">Signin</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}"><span style="color:rgb(12, 10, 10);">About us</span></a>
+                  </li>
+                 
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <style>
+            body {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    jsutify-content: center;
+    align-items: center;
+    margin: 0;
+    text-shadow: 8px 8px 10px #0000008c;
+    background-color: #343a40;
+    background-size: 50px 50px;
+    background-color: #4c2850;
+    background-size: 13px 13px, 29px 29px, 37px 37px, 53px 53px;
+    background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, .07) 50%, transparent 50%), -webkit-linear-gradient(0, rgba(255, 255, 255, .13) 50%, transparent 50%), -webkit-linear-gradient(0, transparent 50%, rgba(255, 255, 255, .17) 50%), -webkit-linear-gradient(0, transparent 50%, rgba(255, 255, 255, .19) 50%);
+    background-image: -moz-linear-gradient(0, rgba(255, 255, 255, .07) 50%, transparent 50%), -moz-linear-gradient(0, rgba(255, 255, 255, .13) 50%, transparent 50%), -moz-linear-gradient(0, transparent 50%, rgba(255, 255, 255, .17) 50%), -moz-linear-gradient(0, transparent 50%, rgba(255, 255, 255, .19) 50%);
+    background-image: -ms-linear-gradient(0, rgba(255, 255, 255, .07) 50%, transparent 50%), -ms-linear-gradient(0, rgba(255, 255, 255, .13) 50%, transparent 50%), -ms-linear-gradient(0, transparent 50%, rgba(255, 255, 255, .17) 50%), -ms-linear-gradient(0, transparent 50%, rgba(255, 255, 255, .19) 50%);
+    background-image: -o-linear-gradient(0, rgba(255, 255, 255, .07) 50%, transparent 50%), -o-linear-gradient(0, rgba(255, 255, 255, .13) 50%, transparent 50%), -o-linear-gradient(0, transparent 50%, rgba(255, 255, 255, .17) 50%), -o-linear-gradient(0, transparent 50%, rgba(255, 255, 255, .19) 50%);
+    background-image: linear-gradient(0, rgba(255, 255, 255, .07) 50%, transparent 50%), linear-gradient(0, rgba(255, 255, 255, .13) 50%, transparent 50%), linear-gradient(0, transparent 50%, rgba(255, 255, 255, .17) 50%), linear-gradient(0, transparent 50%, rgba(255, 255, 255, .19) 50%);
+              }
+            .container{
+                width: 250px;
+                height: 200px;
+              }
+            #code{
+                margin:auto;
+                /* position:relative; */
+                width:300%; 
+                right:215px; 
+                border: 5px solid black;
+                border-style: groove;
+                box-shadow:black;
+                border-radius: 5px ;       
+            }
+            .text{
+                position:absolute;
+                bottom:9%;
+                color:rgb(159, 16, 16);
+                margin: auto;
+                }
+                .text{
+                position:absolute;
+                bottom:40%;
+                color:white;
+                margin-left:20%;
+                color: rgb(9, 6, 16);
+                text-align: center;
+                font-size: 400px;
+                }
+               
+            </style>
+            </div>
+            <div class="text">
+              
+              <h1 style="font-size:12vw">WELCOME </h1>                
+            </div>
+            
+           
+        
+    </body>
+</html>
+
