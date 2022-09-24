@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Signin page</title>  
+</head>
+<body>
+    <div class="login"> <h1 style="color:rgb(170, 249, 44) ;"><b><u  text-decoration-color: pink;>LOGIN YOUR ACCOUNT</u></b></h1></div>
+   
+    <div class="container">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1" style="color:rgb(252, 255, 53);"><h1 ><b>EMAIL ADDRESS</b></h1></label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted"><h2 style="color:rgb(77, 244, 77)">We'll never share your email with anyone else.</h2></small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"style="color:rgb(252, 255, 53)";><h1 ><b>PASSWORD</b></h1></label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1"><span style="font-size: 25px"><span style="color:rgb(76, 234, 76)">Check me out</span></span></label>
+            </div>
+            <button type="submit" class="button"><span style="font-size:33px";border:none;><b>SUBMIT</b></span></button>
+          </form>
+          
+    </div>
+    <style>
+    body {
+    background: linear-gradient(-45deg, #3e6d54, #0e0d0e, #50368d, #572c57);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    margin-top:20rem;
+    size-adjust:5px;
+    margin-left: 50rem;
+}
+.form-group{
+
+    border-right:90px;
+    align-content: center;
+    size:"40px";
+    size-adjust: 50;
+    width: 50%;
+   
+
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.container{
+            margin-top:5rem;
+            text-align: center;
+            margin-top:5rem;
+}    
+.login{
+    margin-left: 11rem;
+}    
+.button { 
+height: 100px; 
+width: 200px; 
+background-color: #1e201e;
+color: aqua; 
+border:none;
+
+} 
+    </style>
+    
+</body>
+</html>
