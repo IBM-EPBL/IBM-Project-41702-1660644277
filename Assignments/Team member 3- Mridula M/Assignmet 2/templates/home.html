@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script> 
+         
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark ">
+            <div class="container-fluid">
+             <span class="navbar-brand mb-0 h1">NAVBAR</span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="{{ url_for('home') }}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('signin') }}">Signin</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About us</a>
+                  </li>
+                 
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <style>
+            body {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    jsutify-content: center;
+    align-items: center;
+    margin: 0;
+    text-shadow: 8px 8px 10px #ec10108c;
+    background-color: #423934;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #9da1a4, #d5a0df, #d1afe3, #edb0ce, #d2b4b4);
+              }
+            .container{
+                width: 250px;
+                height: 200px;
+                
+              }
+            #code{
+                margin:auto;
+                /* position:relative; */
+                width:300%; 
+                right:215px; 
+                border: 5px solid black;
+                border-style: groove;
+                box-shadow:black;
+                border-radius: 5px ;       
+            }
+            .text{
+                position:absolute;
+                bottom:9%;
+                color:rgb(159, 16, 16);
+                margin: auto;
+                }
+                .text{
+                position:absolute;
+                bottom:40%;
+                color:white;
+                margin-left:20%;
+                color: rgb(33, 55, 48);
+                text-align: center;
+                font-size: 400px;
+                }
+               
+            </style>
+            </div>
+            <div class="text">
+              
+              <h1 style="font-size:12vw">WELCOME </h1>                
+            </div>
+            
+           
+        
+    </body>
+</html>
+
