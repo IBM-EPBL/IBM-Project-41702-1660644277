@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Plasma-Home</title>
+<style>
+    body{
+    background:#fff;
+    }
+
+    .heading{
+        padding-top: 30px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .profile-area{
+    padding:30px 0;
+    }
+    .card{
+      box-shadow: 0 0 30px rgba(0,0,0,0.1);
+      overflow:hidden;
+      border-radius:15px;
+      margin-top:30px;
+    }
+    .img1 img{
+        height:100px;
+        margin-left:auto;
+        margin-right:auto;
+        /* border-top-right-radius:15px;
+        border-top-left-radius:15px; */
+        width:100%;
+    }
+    
+    .img2 img{
+      margin-left: auto;
+        
+      text-align: center;
+      border-radius: 50%;
+      width: 100px;
+    }
+    .card:hover .img2 img{
+        border-color:bg-primary;
+        transition:.7s
+    }
+    .main-text{
+        padding: 30px 0;
+        text-align:center;
+        /* background-color: #dc3545; */
+        }
+    .main-text h2{
+        top:22px;
+        text-transform:uppercase;
+        font-weight: 900;
+        font-size:20px;
+        margin: 0 0 10px;
+    }
+    .main-text p{
+        font-size:16px;
+        padding: 0 35px;
+    }
+    .space{
+    margin-bottom:20px;
+    }
+</style>
+{% endblock %}
+
+{% block link %}
+<link rel="stylesheet" href="./static/home.css">
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="landing">
+        <div class="landing-image" data-aos="fade-down" data-aos-duration="2000">
+            <img src="https://plasmadonorkpriet.s3.jp-tok.cloud-object-storage.appdomain.cloud/banner.jpg" alt="Banner-image" width="400px" >
+        </div>
+        <div class="landing-text" data-aos="fade-up" data-aos-duration="1000">
+            <h1>A DROP FOR YOU!AN OCEAN FOR SOMEONE ELSE...
+                DONATE PLASMA SAVE SOMEONES LIFE.</h1>
+            <div class="btn btn-danger" style="background-color: #ffffff;">
+                <a href="{{ url_for('signin') }}" style="text-decoration: none;"><span style="color: #000000; font-size: size 6vw;">Donate Plasma</a>
+            </div>
+        </div>
+        
+    </div><br><hr>
+
+    <br>
+    <h1 style="text-align: center; margin-top: 10px;">Know more about Plasma</h1>
+    <div class = "profile-area">
+        <div class = "container">
+          <div class="row">
+            <div class = "col-12 col-md-6 col-lg-6">
+              <div class = "card">
+                  <div class="img1"><img src="https://plasmadonorkpriet.s3.jp-tok.cloud-object-storage.appdomain.cloud/red.jpg"></div>
+                  
+                <div class = "main-text card-body">
+                  <h2 class="card-title">What is Plasma?</h2>
+                  <p class="card-body">The liquid portion of whole blood known as plasma contains the suspended cellular components. It has more proteins, which help the blood coagulate and fight infection. Plasma from blood group AB donors is known as AB plasma. Because it is suitable for all recipients, regardless of blood group, it is known as "universal donor" plasma.</p>
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class = "col-12 col-md-6 col-lg-6">
+              <div class = "card">
+                <div class="img1"><img src=" https://plasmadonorkpriet.s3.jp-tok.cloud-object-storage.appdomain.cloud/red.jpg"></div>
+                <div class = "main-text card-body">
+                  <h2 class="card-title">What is Plasmapheresis?</h2>
+                  <p class="card-body">Plasma is typically isolated from whole blood and collected via a process called plasmapheresis. Blood enters a machine containing a sterile, disposable plastic kit through a single needle inserted into an arm vein. #dc3545 blood cells and other components of your blood are returned to you through the same needle after the plasma has been separated and routed out into a special bag.</p>
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class = "col-12 col-md-6 col-lg-6">
+              <div class = "card">
+              <div class="img1"><img src=" https://plasmadonorkpriet.s3.jp-tok.cloud-object-storage.appdomain.cloud/red.jpg"></div>
+                <div class = "main-text card-body">
+                  <h2 class="card-title">Is Plasmapheresis Safe?</h2>
+                  <p class="card-body">Absolutely. All plastics and needles that come into touch with you are used just once before being disposed, and the machine and the operation have been examined and approved by the Food and Drug Administration (FDA). There is no chance of returning the incorrect blood to you since at no point during the procedure is the blood being returned to you removed from the needle in your arm.</p>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class = "col-12 col-md-6 col-lg-6">
+              <div class = "card">
+              <div class="img1"><img src=" https://plasmadonorkpriet.s3.jp-tok.cloud-object-storage.appdomain.cloud/red.jpg"></div>
+                <div class = "main-text card-body">
+                  <h2 class="card-title">How Long Does Plasmapheresis Take?</h2>
+                  <p class="card-body">The plasmapheresis process lasts for about 40 minutes, but the staff will need an additional 20 minutes to get your medical history. The experience will be made as delightful and peaceful as possible.</p><br><br>
+                  <br>
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class = "col-12 col-md-6 col-lg-6">
+              <div class = "card">
+              <div class="img1"><img src=" https://plasmadonorkpriet.s3.jp-tok.cloud-object-storage.appdomain.cloud/red.jpg"></div>
+                <div class = "main-text card-body">
+                  <h2 class="card-title">How Do I Prepare to Donate Plasma?</h2>
+                  <p class="card-body">Be careful to get some rest and eat a nutritious breakfast the day before your plasma donation appointment. Drink a lot of water, but stay away from alcohol, coffee, and tea because these can dehydrate you. Choose juice or water instead. Before donating plasma, you shouldn't consume anything greasy or oily as this may lower the quality of your plasma.</p>
+                </div>
+              </div>
+            </div>
+            <div class = "col-12 col-md-6 col-lg-6">
+              <div class = "card">
+              <div class="img1"><img src=" https://plasmadonorkpriet.s3.jp-tok.cloud-object-storage.appdomain.cloud/red.jpg"></div>
+                <div class = "main-text card-body">
+                  <h2 class="card-title">Does donating plasma hurt?</h2>
+                  <p class="card-body">Plasma donation shouldn't be harmful. The experience of giving plasma should be the same as giving blood normally. When the needle is inserted, you might experience some stinging, but after that, the staff will make every effort to keep you comfortable throughout the donation process.</p><br>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+    </div>
+
+
+    
+
+{% endblock %}
