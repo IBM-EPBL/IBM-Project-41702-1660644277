@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+
+  <script type="text/javascript">
+    var m={{ messages|safe }};
+    for(var i=0;i<m.length;i++)
+    {
+      alert(m[i]);
+    }
+  </script>
+
+  {% endif %}
+{% endwith %}
+
+	<div style="width:1300px;height:700px;">
+	<div class="container-fluid"> <!-- Header content -->
+		<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <div>
+    <ul class="nav navbar-nav navbar-right">
+         <li><a href="{{ url_for('accounts') }}">Dashboard</a></li>
+         <li><a href="{{ url_for('readytodonate') }}">Certificate</a></li>
+         <li><a href="{{url_for('login')}}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+    <img src="https://plasma-apphari.s3.jp-tok.cloud-object-storage.appdomain.cloud/Donor%20Badge.jpeg" width="60" height="60">
+    </div>
+    <div style="background-color:rgb(158, 209, 226);">
+<h1>Your donorship is under review! You will receive the requester's address once your details are verified.</h1>
+<label>You can reach the destination and donate the Plasma within 2 hours or else your donorship verification will be cancelled. Thank you.</label>
+
+</div>
+</div>
+<br>
+<div class="container_fluid bg-danger"> <!-- Footer content -->
+  <center><h1 style="color:red; margin-top:600px;"> Donate Blood_Save Life </h1></center>
+</div>
+{% endblock %}
