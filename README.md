@@ -40,5 +40,5 @@ store them and inform them upon a request.
 
 Registers by giving the details as a donor.
 
-The database will have all the details and if a user posts a request then the concerned blood group donors will get notified about it.
+The database will have all the details and if a user posts a request then the concerned blood group donors will get notified about it.<br>
                 DEMO VIDEO LINK: https://www.youtube.com/watch?v=YgcAibN7Q-Y
