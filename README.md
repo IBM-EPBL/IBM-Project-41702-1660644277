@@ -11,7 +11,7 @@ IBM-Project-PNT2022TMID43621
 
 ##SOFTWARE REQUIREMENTS:
 
-Python, Flask , Docker
+Python, Flask , Docker,Kubernetes
 
 ##SYSTEM REQUIREMENT:
 
